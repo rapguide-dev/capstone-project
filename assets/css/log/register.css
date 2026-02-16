@@ -225,4 +225,14 @@ button:hover {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
 
+    .toast {
+        top: 10px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%); /* Center horizontally */
+        max-width: 90%; /* Use 90% of screen width */
+        padding: 8px 15px; /* Slightly smaller padding */
+        font-size: 12px; /* Smaller font for compactness */
+    }
 }
+
