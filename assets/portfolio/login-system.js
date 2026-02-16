@@ -62,5 +62,7 @@ document.addEventListener('DMConntentLoaded', () => {
             // Optional: Auto-redirect to login page
             setTimeout(() => window.location.href = '../portfolio/profile-login.html', 1000);
         });
+    }
 }
+
 
