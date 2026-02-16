@@ -17,24 +17,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Create User Object
-            const userData = {
-                username: username,
-                password: password,
-                email: email,
-                createdAt: new Date().toISOString()
-            };
+            // The "Only Letters" Algorithm (Regular Expression)
+            // ^ = start, [A-Za-z] = letters only, + = one or more, $ = end
+            const letterOnlyRegex = /^[A-Za-z]+$/;
 
-            // Save to "Database" (Local Storage)
-            localStorage.setItem(username, JSON.stringify(userData));
+            // 1. Check for symbols or numbers
+            if (!letterOnlyRegex.test(password)) {
+                alert("Invalid Password! Numbers and symbols are not allowed.");
+            return; // Stop the registration
+        }
 
-            // Feedback and AUTOMATIC REDIRECT
-            alert("Account created successfully! Redirecting you to login...");
-            
-            // This is the line that makes it automatic
-            window.location.href = "../portfolio/profile-login.html"; 
-        });
-    }
+            // 2. Check length (just in case)
+            if (password.length > 12) {
+                alert("Password is too long! Maximum 12 characters.");
+            return;
+        }
+
+        // If it passes both, proceed to save...
+        const userData = { username, password, email };
+        localStorage.setItem(username, JSON.stringify(userData));
+    
+        alert("Success! Redirecting to login...");
+        window.location.href = "profile-login.html";
+    });
+}
 
     // --- 2. LOGIN PAGE LOGIC ---
     const loginForm = document.getElementById('login-form');
@@ -69,3 +75,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
