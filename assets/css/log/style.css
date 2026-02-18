@@ -494,7 +494,7 @@ section.title::before {
     color: #ff6b35;
     overflow: hidden;
 
-    animation: typing-loop 8s steps(40, end) 0.5s forwards, blink-caret 0.75s step-end infinite;
+    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -810,3 +810,4 @@ section.title::before {
     }
 
 };
+
