@@ -497,10 +497,9 @@ section.title::before {
     animation: typing-loop 8s steps(40, end) 0.5s forwards, blink-caret 0.75s step-end infinite;
 }
 
-@keyframes typing-loop {
-    0%, 10% { width: 0; }           
-    45%, 55% { width: 100%; }      
-    90%, 100% { width: 0; }
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
 }
 
 @keyframes blink-caret {
@@ -809,4 +808,5 @@ section.title::before {
     .toast {
         animation: slideInMobile 0.4s ease-out;
     }
+
 };
