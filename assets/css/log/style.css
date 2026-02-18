@@ -476,37 +476,6 @@ section.title::before {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 107, 53, 0.2);
 }
 
-.paragraph-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 107, 53, 0.2);
-    padding: 20px;
-    border-radius: 12px;
-    width: fit-content;
-    margin: 20px auto;
-}
-
-.paragraph-text p {
-    font-family: 'Courier New', Courier, monospace;
-    white-space: nowrap;
-    color: #ff6b35;
-    overflow: hidden;
-
-    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #ff6b35 }
-}
-
 /* Icon Styling */
 .tutorial-card i {
     font-size: 3.5rem;
@@ -810,4 +779,5 @@ section.title::before {
     }
 
 };
+
 
