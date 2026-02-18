@@ -354,20 +354,6 @@ section.title::before {
     filter: brightness(1.1);
 }
 
-/* QUIZ Button (Dark Orange / Glass Theme) */
-.quiz-btn {
-    background: transparent;
-    color: #ff6b35;
-    border: 1px solid #ff6b35;
-}
-
-.quiz-btn:hover {
-    background: #ff6b35;
-    color: #fff;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
-}
-
 /* Icon adjustment */
 .btn-action i {
     font-size: 1.2rem;
@@ -779,5 +765,6 @@ section.title::before {
     }
 
 };
+
 
 
